@@ -15,18 +15,18 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-bun x sv@0.13.0 create --template minimal --types ts --add prettier vitest="usages:unit,component" tailwindcss="plugins:none" --install bun NipponPath
+bunx sv@0.13.0 create --template minimal --types ts --add prettier vitest="usages:unit,component" tailwindcss="plugins:none" --install bun NipponPath
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn` or `bun install`), start a development server:
 
 ```sh
-npm run dev
+bun run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+bun run dev -- --open
 ```
 
 ## Building
@@ -34,9 +34,15 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```sh
-npm run build
+bun run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `bun run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## What i choose is Vercel for Front-End Deployments
+
+```bash
+bun install -D @sveltejs/adapter-vercel
+```
