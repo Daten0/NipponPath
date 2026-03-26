@@ -1,17 +1,9 @@
 <script lang="ts">
-  import Navbar from '$lib/components/Main/Navbar.svelte';
   import Hero from '$lib/components/Main/Hero.svelte';
   import EducationSection from '$lib/components/Main/EducationSection.svelte';
   import PlacementSection from '$lib/components/Main/PlacementSection.svelte';
-  import Footer from '$lib/components/Main/Footer.svelte';
 </script>
 
-<svelte:head>
-  <title>Nippon Pathway - Kerja & Pelatihan ke Jepang</title>
-  <meta name="description" content="Jasa pelatihan dan penempatan tenaga kerja ke Jepang terpercaya." />
-</svelte:head>
-
-<Navbar />
 <main>
   <Hero />
   <EducationSection />
@@ -28,4 +20,3 @@
     </div>
   </section>
 </main>
-<Footer />
