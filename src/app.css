@@ -1,0 +1,7 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+/* Smooth Scrolling untuk seluruh halaman */
+html {
+  scroll-behavior: smooth;
+}
