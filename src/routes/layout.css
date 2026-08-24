@@ -1,1 +1,12 @@
 @import 'tailwindcss';
+
+/* Brand palette — navy / gold / white (derived from poster, see Contexts/new_res.md) */
+@theme {
+	--color-primary: #1e3a8a; /* Deep Navy Blue */
+	--color-primary-light: #3b5fc0;
+	--color-primary-dark: #172b66;
+	--color-primary-soft: #e8eefb;
+	--color-highlight: #ffc800; /* Golden Yellow */
+	--color-highlight-light: #ffd54a;
+	--color-highlight-dark: #e0a800;
+}
